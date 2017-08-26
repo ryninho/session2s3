@@ -59,6 +59,7 @@ aws s3 cp s3://my_bucket/my-project_2017_08_25_20_48_24_011898.pkl ~/Downloads/d
 Now we open it using `dill` in Python:
 ```
 import dill
+# you may also need to import some of the packages your script uses
 
 dill.load_session(~/Downloads/debug.pkl)
 
