@@ -7,7 +7,7 @@ setup(
   author = 'Eric Rynerson',
   author_email = 'eric.rynerson@gmail.com',
   url = 'https://github.com/ryninho/session2s3',
-  download_url = ''
+  download_url = 'https://github.com/ryninho/session2s3/archive/0.1.tar.gz',
   keywords = ['s3', 'logging', 'debugging', 'session', 'rollback'],
   classifiers = [],
 )
