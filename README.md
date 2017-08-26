@@ -12,15 +12,9 @@ Since this captures the entire session, it keeps up with code changes- there's n
 
 ### Install and setup
 
-Soon this will be in PyPI but it is not yet as I haven't had time. Sorry.
-
-For the examples below you can just place the `session2s3.py` in your project for now. Or you can put it somewhere central and use `imp` like so:
-
+You can use pip:
 ```
-ses2s3 = imp.load_source(
-    'ses2s3',
-    '../common/useful_stuff/session2s3.py'
-)
+pip install session2s3
 ```
 
 You will need your **AWS credentials** set in `~/.aws/credentials` as per the [boto3 instructions](https://boto3.readthedocs.io/en/latest/guide/quickstart.html#configuration)
@@ -35,11 +29,11 @@ aws_secret_access_key = YOUR_SECRET_KEY
 You can use this tool by simply adding the following to your script:
 
 ```
-import session2s3 as ses2s3 # or use imp as described further above
+import session2s3 as ses2s3
 
 # insert all your clever code in between...
 
-ses2s3.workspace_to_s3('my-project')
+ses2s3.session_to_s3('my-project')
 ```
 
 You're done!
