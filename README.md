@@ -29,11 +29,11 @@ aws_secret_access_key = YOUR_SECRET_KEY
 You can use this tool by simply adding the following to your script:
 
 ```
-import session2s3 as ses2s3
+from session2s3 import session_to_s3
 
 # insert all your clever code in between...
 
-ses2s3.session_to_s3('my-project')
+session_to_s3('my-project', 'my-bucket')
 ```
 
 You're done!
