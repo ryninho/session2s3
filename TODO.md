@@ -1,6 +1,8 @@
 # TODO
 
-* put it on PyPI
+* put it on PyPI (FIX IT)
+* don't upload pickle files
+* delete the pickle files? (maybe make that an option)
 * Make a script for recovering the file
   * do we need `awscli`?
   * on the other hand we don't know what the file is called- could take the latest automatically
