@@ -71,7 +71,7 @@ def workspace_to_s3(
   prefix,
   bucket_name="my-team-or-project-bucket",
   timestamp=True,
-  save_from_local=False,
+  save_from_local=False
   ):
   """Save session to S3 using team/project defaults."""
   sys = os.uname()[0]
