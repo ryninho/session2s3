@@ -7,7 +7,7 @@ import re
 import boto3
 import dill
 
-def session_to_s3(prefix, bucket_name, timestamp=True):
+def session_to_s3(prefix, bucket_name, timestamp=True, **kwargs):
   """Save session to S3 bucket. Login via ~/.aws/credentials as per boto3."""
   if timestamp:
     now_str = str(datetime.now())
@@ -17,5 +17,5 @@ def session_to_s3(prefix, bucket_name, timestamp=True):
     filename = prefix + ".pkl"
   dill.dump_session(filename)
   s3 = boto3.resource('s3')
-  s3.meta.client.upload_file(filename, bucket_name, filename)
+  s3.meta.client.upload_file(filename, bucket_name, filename, **kwargs)
   return filename
