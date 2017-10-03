@@ -74,7 +74,7 @@ def workspace_to_s3(
   save_from_local=False,
   ):
   """Save session to S3 using team/project defaults."""
-  sys = os.uname()
+  sys = os.uname()[0]
   if sys == 'Linux' or save_from_local:
     filename = session_to_s3(prefix, bucket_name, timestamp)
     print "saved workspace " + filename + " to S3 bucket " + bucket_name
