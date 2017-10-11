@@ -79,3 +79,7 @@ def workspace_to_s3(
     filename = session_to_s3(prefix, bucket_name, timestamp)
     print "saved workspace " + filename + " to S3 bucket " + bucket_name
 ```
+
+### A final word of caution
+
+Be careful what you save! For example, if someone unfriendly got access to your S3 bucket, you wouldn't want them to have access to your database as well via information saved from your session. For example, if your script instantiates a set of database tools as an object, be sure that either that object doesn't store the database password or that you destroy the object before saving your session (e.g. by only creating and using the database-connecting object within a function).
