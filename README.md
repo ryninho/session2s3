@@ -24,6 +24,8 @@ aws_access_key_id = YOUR_ACCESS_KEY
 aws_secret_access_key = YOUR_SECRET_KEY
 ```
 
+Note: This is a development version which so far has been tested only with Python 2.7.10.
+
 ### Use
 
 You can use this tool by simply adding the following to your script:
