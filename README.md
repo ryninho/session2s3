@@ -55,12 +55,13 @@ Now we open it using `dill` in Python:
 import dill
 # you may also need to import some of the packages your script uses
 
-dill.load_session(~/Downloads/debug.pkl)
+dill.load_session("~/Downloads/debug.pkl")
 
 # now check it out...
 dir()
 ```
 
+Note: Before you can load your saved session you may have to first load modules that the saved session had loaded using imp.load_source(). If you don't, you may see error messages starting with "No module named" or "'module' object has no attribute".
 
 ### Extra credit
 
