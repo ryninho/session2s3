@@ -10,3 +10,4 @@
 * how to use this with imports and picklings that happen within a function?
   * another tool for collecting pickles in all subdirectories? (might collect too much)
   * or something that goes inside of functions? or need to have functions return all the objects? (big process change)
+* use isinstance to remove modules before saving (and have that be the default)
