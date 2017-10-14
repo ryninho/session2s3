@@ -63,7 +63,7 @@ dill.load_session("~/Downloads/debug.pkl")
 dir()
 ```
 
-Note: Before you can load your saved session you may have to first load modules that the saved session had loaded using imp.load_source(). If you don't, you may see error messages starting with "No module named" or "'module' object has no attribute".
+Note: Before you can load your saved session you may have to first load modules that are not in your site packages, e.g. modules the saved session had loaded using imp.load_source() or that were in the same . If you don't, you may see error messages starting with "No module named" or "'module' object has no attribute".
 
 ### Extra credit
 
